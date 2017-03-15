@@ -1,0 +1,16 @@
+$back-color: blue;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.testClass{
+    background-color: red;
+    h1 {
+        color: yellow;
+        font-size: 14px;
+    }
+}
