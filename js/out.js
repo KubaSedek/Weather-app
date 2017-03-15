@@ -63,27 +63,39 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+$(function() {
+	var body = $("body");
+	console.log(body);
+	body.hide();
+	body.fadeIn(1000);
+});
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(4);
+var content = __webpack_require__(5);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, {});
+var update = __webpack_require__(8)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./style.scss", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./style.scss");
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js?sourceMap!./style.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js?sourceMap!./style.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -93,7 +105,7 @@ if(false) {
 }
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -214,7 +226,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -228,9 +240,9 @@ function fromByteArray (uint8) {
 
 
 
-var base64 = __webpack_require__(1)
-var ieee754 = __webpack_require__(6)
-var isArray = __webpack_require__(3)
+var base64 = __webpack_require__(2)
+var ieee754 = __webpack_require__(7)
+var isArray = __webpack_require__(4)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -2008,10 +2020,10 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -2022,21 +2034,21 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)(undefined);
+exports = module.exports = __webpack_require__(6)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  font-family: \"Raleway\", Arial, sans-serif; }\n\n.testClass {\n  background-color: red; }\n  .testClass h1 {\n    color: yellow;\n    font-size: 14px; }\n", ""]);
+exports.push([module.i, "* {\n  padding: 0;\n  margin: 0 auto;\n  box-sizing: border-box;\n  font-family: \"Raleway\", Arial, sans-serif; }\n\n.container {\n  height: 100%;\n  width: 1024px;\n  margin: 0 auto; }\n\n.position {\n  display: flex;\n  justify-content: center;\n  align-items: flex-start; }\n\n#header {\n  background-image: url(\"https://media.giphy.com/media/IuKnqFMhtcA2A/giphy.gif\");\n  background-repeat: no-repeat;\n  background-position: center bottom;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n  #header .header-content {\n    text-align: center;\n    margin-top: 40vh; }\n    #header .header-content h1 {\n      color: white;\n      border: 4px solid white; }\n    #header .header-content p {\n      margin-top: 50px;\n      color: white;\n      width: 500px; }\n\n#section {\n  background-color: white;\n  background-attachment: fixed;\n  width: 100%;\n  height: 80vh; }\n  #section .section-content {\n    text-align: center;\n    margin-top: 20px; }\n    #section .section-content h2 {\n      color: black;\n      font-size: 30px;\n      border: 4px solid black;\n      padding: 10px; }\n\n#second-section {\n  background-image: url(\"https://cdn.pixabay.com/photo/2013/11/15/02/05/dramatic-sky-210776_960_720.jpg\");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  width: 100%;\n  height: 60vh; }\n  #second-section .about {\n    margin-left: 20px;\n    padding-top: 40px;\n    width: 500px;\n    color: white;\n    display: block; }\n    #second-section .about h3 {\n      padding: 10px;\n      text-align: center;\n      font-size: 30px;\n      border: 4px solid white; }\n    #second-section .about p {\n      margin-top: 20px;\n      width: 500px; }\n\n#footer {\n  background-color: black;\n  width: 100%;\n  height: 100px; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/*
@@ -2115,10 +2127,10 @@ function toComment(sourceMap) {
   return '/*# ' + data + ' */';
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -2208,7 +2220,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 /*
@@ -2460,7 +2472,7 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 var g;
@@ -2487,11 +2499,13 @@ module.exports = g;
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
+
+__webpack_require__(1);
 
 __webpack_require__(0);
 
