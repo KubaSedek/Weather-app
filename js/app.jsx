@@ -60,8 +60,7 @@ class App extends React.Component {
                         </tr>
                         <tr>
                             <td>Pressure</td>
-                            <td>{this.state.newObj.main.pressure}
-                                hpa</td>
+                            <td>{this.state.newObj.main.pressure} hpa</td>
                         </tr>
                         <tr>
                             <td>Humidity</td>

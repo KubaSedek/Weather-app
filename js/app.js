@@ -1,4 +1,5 @@
 $(function() {
+
 	var body = $("body");
 	var headerHeader = $("body").find("h1");
 
