@@ -10,7 +10,7 @@ $border: 4px solid;
     position: absolute;
     width: 150px;
     height: 150px;
-    @media all and (max-width: 480px){
+    @media screen and (min-width: 600px){
         width: 90px;
         height: 90px;
     }
@@ -21,7 +21,7 @@ $border: 4px solid;
     height: 100%;
     width: 1024px;
     margin: 0 auto;
-    @media all and (max-width: 480px){
+    @media screen and (min-width: 600px){
         width: 400px;
     }
 }
@@ -41,13 +41,13 @@ $border: 4px solid;
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-    @media all and (max-width: 480px){
+    @media screen and (min-width: 600px){
 
     }
     .header-content {
         text-align: center;
         margin-top: 40vh;
-        @media all and (max-width: 480px){
+        @media screen and (min-width: 600px){
             width: 480px;
             margin-top: 20vh;
         }
@@ -58,7 +58,7 @@ $border: 4px solid;
             font-weight: lighter;
             padding: 15px;
             letter-spacing: 4px;
-            @media all and (max-width: 480px){
+            @media screen and (min-width: 600px){
                 width: 400px;
                 margin: 0 auto;
             }
