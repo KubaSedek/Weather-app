@@ -10,13 +10,20 @@ $border: 4px solid;
     position: absolute;
     width: 150px;
     height: 150px;
+    @media all and (max-width: 480px){
+        width: 90px;
+        height: 90px;
+    }
 }
 
-.container{
+.container {
     // border: 2px solid red;
     height: 100%;
     width: 1024px;
     margin: 0 auto;
+    @media all and (max-width: 480px){
+        width: 400px;
+    }
 }
 
 .position {
@@ -34,9 +41,16 @@ $border: 4px solid;
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
+    @media all and (max-width: 480px){
+
+    }
     .header-content {
         text-align: center;
         margin-top: 40vh;
+        @media all and (max-width: 480px){
+            width: 480px;
+            margin-top: 20vh;
+        }
         h1 {
             color: white;
             border: 3px solid #326123;
@@ -44,6 +58,10 @@ $border: 4px solid;
             font-weight: lighter;
             padding: 15px;
             letter-spacing: 4px;
+            @media all and (max-width: 480px){
+                width: 400px;
+                margin: 0 auto;
+            }
             &:hover {
                 cursor: pointer;
                 border-color: #3CD6FF;
@@ -101,7 +119,7 @@ $border: 4px solid;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 60vh;
+    height: 400px;
     .about {
         margin-left: 20px;
         padding-top: 40px;
