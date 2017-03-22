@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./js/app.jsx",
+    entry: ['whatwg-fetch', './js/app.jsx'],
     output: {
         filename: "./js/out.js"
      },
@@ -7,7 +7,8 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.jsx$/, exclude: /node_modules/,
+                test: /\.jsx$/,
+                exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: { presets: ['es2015', 'stage-2', 'react'] }
             },
@@ -16,10 +17,11 @@ module.exports = {
                 loaders: ["style-loader", "css-loader", "sass-loader?sourceMap"]
             },
             {
-                test: /\.png$/,
-                loader: "file-loader"
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+                loader: 'url-loader?limit=100000'
             }
- 
+
+
         ]
     }
 }
