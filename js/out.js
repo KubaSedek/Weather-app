@@ -9435,7 +9435,7 @@ module.exports = ReactPropTypesSecret;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-__webpack_require__(192);
+__webpack_require__(188);
 
 __webpack_require__(81);
 
@@ -12119,7 +12119,20 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 86 */,
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(87)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "* {\n  padding: 0;\n  margin: 0 auto;\n  box-sizing: border-box;\n  font-family: \"Oxygen\", Arial, sans-serif; }\n\n.img-size {\n  position: absolute;\n  width: 150px;\n  height: 150px; }\n\n.container {\n  height: 100%;\n  width: 100%;\n  max-width: 1024px;\n  margin: 0 auto; }\n\n.position {\n  display: flex;\n  justify-content: center;\n  align-items: flex-start; }\n\n#header {\n  background-image: url(\"https://s-media-cache-ak0.pinimg.com/originals/ef/c6/d9/efc6d99cf4ac33217e661068775de927.gif\");\n  background-repeat: no-repeat;\n  background-position: center bottom;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n  #header .header-content {\n    text-align: center;\n    margin-top: 40vh; }\n    #header .header-content h1 {\n      color: white;\n      border: 3px solid #326123;\n      font-size: 50px;\n      font-weight: lighter;\n      padding: 15px;\n      letter-spacing: 4px; }\n      #header .header-content h1:hover {\n        cursor: pointer;\n        border-color: #3CD6FF;\n        transition: 1s;\n        color: #3CD6FF; }\n      #header .header-content h1:active {\n        color: black;\n        transition: 0.2s; }\n\n#section {\n  background-color: white;\n  width: 100%;\n  height: 100vh; }\n  #section .section-content {\n    text-align: center;\n    margin-top: 100px; }\n    #section .section-content h2 {\n      color: black;\n      font-size: 30px;\n      border: 4px solid;\n      padding: 10px; }\n  #section #app {\n    margin-top: 40px;\n    letter-spacing: 5px;\n    line-height: 30px;\n    display: flex;\n    justify-content: space-between; }\n    #section #app table {\n      margin-top: 20px; }\n    #section #app td {\n      padding-right: 40px;\n      padding-left: 40px; }\n\n#second-section {\n  background-image: url(\"https://68.media.tumblr.com/717dc6a953731b1da21531f5e90a4fea/tumblr_nfhyuyr6tZ1qg20oho1_500.gif\");\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  width: 100%;\n  height: 60vh; }\n  #second-section .about {\n    margin-left: 20px;\n    padding-top: 40px;\n    width: 500px;\n    color: rgba(82, 82, 82, 0.75);\n    display: block; }\n    #second-section .about h3 {\n      width: 400px;\n      padding: 10px;\n      text-align: center;\n      font-size: 30px;\n      border: 4px solid rgba(82, 82, 82, 0.75);\n      position: absolute; }\n  #second-section .technology-img {\n    position: relative; }\n    #second-section .technology-img img:first-child {\n      left: 70px;\n      top: 120px; }\n    #second-section .technology-img img:nth-child(2) {\n      right: 200px;\n      top: 10px; }\n    #second-section .technology-img img:nth-child(3) {\n      right: 70px;\n      top: 100px; }\n    #second-section .technology-img img:nth-child(4) {\n      left: 300px;\n      top: 140px; }\n    #second-section .technology-img img:nth-child(5) {\n      right: 350px;\n      top: 200px; }\n    #second-section .technology-img img:nth-child(6) {\n      right: 380px;\n      top: 30px; }\n\n#footer {\n  background-color: black;\n  width: 100%;\n  height: 75px; }\n  #footer .footer-content {\n    display: flex;\n    justify-content: space-between;\n    padding-top: 28px;\n    color: darkgrey; }\n    #footer .footer-content p {\n      margin-right: 40px;\n      margin-left: 40px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
 /* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24794,7 +24807,32 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 188 */,
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(86);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(187)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js?sourceMap!./style.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js?sourceMap!./style.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
 /* 189 */
 /***/ (function(module, exports) {
 
@@ -24828,46 +24866,6 @@ module.exports = g;
 __webpack_require__(80);
 module.exports = __webpack_require__(79);
 
-
-/***/ }),
-/* 191 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(87)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "* {\n  padding: 0;\n  margin: 0 auto;\n  box-sizing: border-box;\n  font-family: \"Oxygen\", Arial, sans-serif; }\n\nhtml {\n  font-size: 50px; }\n\n#header {\n  background-image: url(\"https://s-media-cache-ak0.pinimg.com/originals/ef/c6/d9/efc6d99cf4ac33217e661068775de927.gif\");\n  background-repeat: no-repeat;\n  background-position: center bottom;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 50vh; }\n  @media (min-width: 700px) {\n    #header {\n      height: 100vh; } }\n  #header .header-content {\n    text-align: center;\n    padding: 3vh; }\n    @media (min-width: 700px) {\n      #header .header-content {\n        padding-top: 30vh; } }\n    #header .header-content h1 {\n      color: white;\n      font-size: 0.8rem;\n      font-weight: lighter;\n      padding: 15px;\n      letter-spacing: 4px; }\n      @media (min-width: 700px) {\n        #header .header-content h1 {\n          color: white;\n          border: 3px solid green;\n          font-size: 1rem;\n          font-weight: lighter;\n          padding: 0.15rem;\n          letter-spacing: 4px;\n          max-width: 80vw;\n          position: relative; } }\n      #header .header-content h1:hover {\n        cursor: pointer;\n        border-color: #3CD6FF;\n        transition: 1s;\n        color: #3CD6FF; }\n      #header .header-content h1:active {\n        color: black;\n        transition: 0.2s; }\n\n#section {\n  background-color: white;\n  width: 100%;\n  height: 100vh; }\n  #section .section-content {\n    text-align: center;\n    padding-top: 1.4rem; }\n    #section .section-content h2 {\n      color: black;\n      font-size: 0.8rem;\n      border: 4px solid;\n      padding: 10px; }\n  #section #app {\n    font-size: 0.7rem;\n    letter-spacing: 5px;\n    line-height: 30px;\n    overflow-x: hidden;\n    width: 90vw;\n    height: 9rem; }\n    @media (min-width: 700px) {\n      #section #app {\n        margin-top: 40px;\n        letter-spacing: 5px;\n        line-height: 30px;\n        display: flex;\n        justify-content: space-between; } }\n    #section #app table {\n      margin-bottom: 1rem;\n      font-size: 0.6rem;\n      width: 100%;\n      max-width: 400px; }\n      @media (min-width: 700px) {\n        #section #app table {\n          margin-bottom: 1rem;\n          font-size: 0.1rem;\n          max-width: 100%; } }\n    #section #app td {\n      margin-top: 15px;\n      padding-right: 40px;\n      padding-left: 40px;\n      font-size: 0.6rem;\n      display: block; }\n      @media (min-width: 700px) {\n        #section #app td {\n          margin-top: 15px;\n          padding-right: 20px;\n          padding-left: 20px;\n          font-size: 0.6rem;\n          display: inline; } }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 192 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(191);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(187)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js?sourceMap!./style2.scss", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js?sourceMap!./style2.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
 
 /***/ })
 /******/ ]);
